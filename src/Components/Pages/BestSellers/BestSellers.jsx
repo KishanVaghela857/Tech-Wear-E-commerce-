@@ -37,10 +37,10 @@ export default function BestSellers() {
               <p className="text-gray-500 text-sm">{product.brand}</p>
               <div className="mt-2 flex flex-col items-center">
                 <p className="text-gray-400 line-through">
-                  ₹{(product.price + 100).toFixed(2)}
+                  ${(product.price + 100).toFixed(2)}
                 </p>
                 <p className="text-purple-600 font-bold text-lg">
-                  ₹{product.price.toFixed(2)}
+                  ${product.price.toFixed(2)}
                 </p>
               </div>
               <button className="w-full h-[30px] bottom-3 left-3 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded  cursor-pointer"
@@ -52,7 +52,7 @@ export default function BestSellers() {
         <div className="mt-12">
           <a
             href="/products"
-            className="inline-block bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg text-lg font-medium transition"
+            className="!no-underline inline-block bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg text-lg font-medium transition"
           >
             View All
           </a>
